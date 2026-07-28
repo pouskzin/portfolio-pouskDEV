@@ -65,6 +65,7 @@ npm run dev
 yarn dev
 5. Acesse no navegador:
 Abra http://localhost:3000 no seu navegador para ver o resultado.
+```
 
 📬 Contato
 Sinta-se à vontade para entrar em contato comigo para falar sobre tecnologia, projetos ou oportunidades de estágio!
@@ -73,6 +74,6 @@ LinkedIn: linkedin.com/in/kaio-freire
 
 GitHub: @pouskzin
 
-Email: kaioaugustofreire@gmail.com
+Email: <kaioaugustofreire@gmail.com>
 
 Feito com ☕ por Kaio Freire.
