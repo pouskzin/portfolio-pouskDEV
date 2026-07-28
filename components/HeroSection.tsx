@@ -22,16 +22,16 @@ export function HeroSection() {
   };
 
   return (
-    <section id="sobre" className="pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-start justify-center container mx-auto px-4 min-h-[80vh] relative overflow-hidden">
+    <section id="sobre" className="pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-start justify-center container mx-auto px-4 min-h-[80vh] relative isolate overflow-hidden">
       {/* Elemento de fundo Tech/Monospace */}
-      <div className="absolute top-1/2 right-[-5%] -translate-y-1/2 text-[15rem] md:text-[25rem] font-mono font-bold text-surface/10 select-none pointer-events-none z-[-1]" aria-hidden="true">
+      <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 text-[15rem] md:text-[25rem] font-mono font-bold text-surface/10 opacity-5 dark:opacity-10 select-none pointer-events-none" aria-hidden="true">
         &lt;/&gt;
       </div>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         animate="visible"
-        className="max-w-4xl"
+        className="max-w-4xl relative z-10"
       >
         <motion.div
           variants={fadeUpVariants}
