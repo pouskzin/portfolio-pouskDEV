@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: theme('colors.zinc.50');
+    --surface: theme('colors.white');
+    --text: theme('colors.zinc.900');
+    --accent: theme('colors.purple.600');
+  }
+
+  .dark {
+    --background: theme('colors.zinc.950');
+    --surface: theme('colors.zinc.900');
+    --text: theme('colors.zinc.50');
+    --accent: theme('colors.purple.500');
+  }
+}
+
+@layer base {
+  * {
+    @apply border-surface;
+  }
+  body {
+    @apply bg-background text-text font-sans antialiased;
+  }
+}
