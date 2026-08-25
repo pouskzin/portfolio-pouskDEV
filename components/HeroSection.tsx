@@ -75,9 +75,8 @@ export function HeroSection() {
           {/* Grupo de Download de Currículos */}
           <div className="flex items-center gap-3 w-full sm:w-auto">
             <a
-              href="assets/cv-en.pdf"
-              download="cv-en.pdf"
-              target="_blank"
+              href="/assets/cv-en.pdf"
+              download="Kaio-Freire-Resume-EN.pdf"
               className="inline-flex flex-1 sm:flex-none items-center justify-center gap-2 px-5 py-3 rounded-full border-2 border-text/90 text-text font-medium hover:bg-surface focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none transition-all shadow-sm"
               aria-label="Download Resume in English"
             >
@@ -86,9 +85,8 @@ export function HeroSection() {
             </a>
 
             <a
-              href="assets/cv-en.pdf"
-              download="cv-pt.pdf"
-              target="_blank"
+              href="/assets/cv-pt.pdf"
+              download="Kaio-Freire-Curriculo-PT.pdf"
               className="inline-flex flex-1 sm:flex-none items-center justify-center gap-2 px-5 py-3 rounded-full border border-zinc-200 dark:border-zinc-800 text-text font-medium hover:bg-surface hover:border-accent/50 dark:hover:border-accent/50 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none transition-all shadow-sm"
               aria-label="Baixar Currículo em Português"
             >
