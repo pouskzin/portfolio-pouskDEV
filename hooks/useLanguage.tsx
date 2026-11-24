@@ -75,6 +75,8 @@ const dictionary = {
     proj2Desc: "API REST desenvolvida em Java voltada para o gerenciamento de tarefas. Implementa as principais operações CRUD (Create, Read, Update, Delete) com foco em desempenho, segurança e código limpo.",
     proj3Title: "Coitz Barbearia",
     proj3Desc: "Sistema web de agendamento preparado para ambiente de produção. Foco meticuloso em UX/UI e experiência do usuário para facilitar e alavancar a conversão de clientes finais, além de simplificar a gestão da barbearia.",
+    proj4Title: "SempreSobra",
+    proj4Desc: "Plataforma SaaS de gestão financeira pessoal focada em controle diário de gastos e previsibilidade. Conta com projeção financeira automática de 6 meses, gerenciamento de contas fixas recorrentes, fluxo de onboarding guiado e arquitetura voltada para segurança, performance e estabilidade.",
 
     // Contact
     contactTitle: "Vamos construir algo ",
@@ -162,6 +164,8 @@ const dictionary = {
     proj2Desc: "REST API developed in Java for task management. Implements major CRUD operations (Create, Read, Update, Delete) with a focus on performance, security, and clean code.",
     proj3Title: "Coitz Barbershop",
     proj3Desc: "Web scheduling system ready for production environment. Meticulous focus on UX/UI and user experience to facilitate and boost end-customer conversion, as well as simplify barbershop management.",
+    proj4Title: "SempreSobra",
+    proj4Desc: "Personal finance SaaS platform focused on daily expense tracking and financial predictability. Features automated 6-month financial forecasting, recurring fixed-bill management, guided user onboarding, and an architecture built for security, performance, and stability.",
 
     // Contact
     contactTitle: "Let's build something ",

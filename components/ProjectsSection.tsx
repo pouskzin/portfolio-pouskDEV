@@ -10,6 +10,15 @@ export function ProjectsSection() {
 
   const projects = [
     {
+      id: 4,
+      title: t("proj4Title"),
+      description: t("proj4Desc"),
+      techs: ["Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Upstash", "Sentry"],
+      imageUrl: "",
+      repoUrl: "#",
+      deployUrl: "https://sempresobra.com.br"
+    },
+    {
       id: 1,
       title: t("proj1Title"),
       description: t("proj1Desc"),
@@ -100,22 +109,30 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="flex flex-wrap gap-4 mt-auto">
-                  <a
-                    href={project.repoUrl}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800/50 bg-surface/5 hover:bg-surface/20 text-text font-medium transition-colors text-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none font-mono"
-                    aria-label={`Ver repositório do projeto ${project.title} no GitHub`}
-                  >
-                    <FaGithub className="w-4 h-4" aria-hidden="true" />
-                    {t("projectsRepoBtn")}
-                  </a>
-                  <a
-                    href={project.deployUrl}
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-text text-background hover:bg-text/90 font-mono font-semibold transition-colors text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none"
-                    aria-label={`Acessar a versão publicada do projeto ${project.title}`}
-                  >
-                    <ExternalLink className="w-4 h-4" aria-hidden="true" />
-                    {t("projectsDeployBtn")}
-                  </a>
+                  {project.repoUrl !== "#" && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-zinc-200 dark:border-zinc-800/50 bg-surface/5 hover:bg-surface/20 text-text font-medium transition-colors text-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none font-mono"
+                      aria-label={`Ver repositório do projeto ${project.title} no GitHub`}
+                    >
+                      <FaGithub className="w-4 h-4" aria-hidden="true" />
+                      {t("projectsRepoBtn")}
+                    </a>
+                  )}
+                  {project.deployUrl !== "#" && (
+                    <a
+                      href={project.deployUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-text text-background hover:bg-text/90 font-mono font-semibold transition-colors text-sm shadow-sm focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus:outline-none"
+                      aria-label={`Acessar a versão publicada do projeto ${project.title}`}
+                    >
+                      <ExternalLink className="w-4 h-4" aria-hidden="true" />
+                      {t("projectsDeployBtn")}
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>
