@@ -3,7 +3,8 @@ import { GeistSans } from "geist/font/sans";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { LanguageProvider } from "@/hooks/useLanguage"
+import { LanguageProvider } from "@/hooks/useLanguage";
+import { Analytics } from "@vercel/analytics/next";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -53,6 +54,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
 
